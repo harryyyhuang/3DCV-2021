@@ -61,7 +61,7 @@ python3 VRvideo.py 2
 
 This video combine the camera relocaliztion and painting algorithm to generate VRvideo with virtual box
 
-![Alt Text](homework2/ARVideo.gif)
+![Alt Text](ARVideo.gif)
 
 ## License
 The MIT License (MIT)
