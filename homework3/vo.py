@@ -33,10 +33,11 @@ class SimpleVO:
                     # insert new camera pose here using vis.add_geometry()
                         # get four corner points and camera
                         # get four corner points and camera 
-                    # get four corner points and camera 
+                    # get four corner points and camera
+                    #inversez_matrix = np.array([[1, 0, 0], [0, 1, 0], [0, 0, 1]])
                     points = np.array([[0, 0, 1], [360, 0, 1], [360, 640, 1], [0, 640, 1]])
                     points = np.linalg.pinv(self.K)@points.T
-                    points =  t + np.linalg.pinv(R)@points
+                    points =  t + R@points
                     points = points.T 
 
                     # get center and concate all
